@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Albums</h1>
+
+        {% for album in albums %}
+            <div>
+                <a href="/albums/{{album.id}}">{{ album.title }}</a>
+            </div>
+        {% endfor %}
+    </body>
+</html>
